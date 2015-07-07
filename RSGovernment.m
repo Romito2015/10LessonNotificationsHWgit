@@ -8,6 +8,16 @@
 
 #import "RSGovernment.h"
 
+NSString *const RSGovernmentTaxLevelDidChangedNotification = @"RSGovernmentTaxLevelDidChangedNotification";
+NSString *const RSGovernmentSalaryDidChangedNotification = @"RSGovernmentSalaryDidChangedNotification";
+NSString *const RSGovernmentPensionDidChangedNotification = @"RSGovernmentPensionDidChangedNotification";
+NSString *const RSGovernmentAveragePriceDidChangedNotification = @"RSGovernmentAveragePriceDidChangedNotification";
+
+NSString *const RSGovernmentTaxLevelUserInfo = @"RSGovernmentTaxLevelUserInfo";
+NSString *const RSGovernmentSalaryUserInfo = @"RSGovernmentSalaryUserInfo";
+NSString *const RSGovernmentPensionUserInfo = @"RSGovernmentPensionUserInfo";
+NSString *const RSGovernmentAveragePriceUserInfo = @"RSGovernmentAveragePriceUserInfo";
+
 @implementation RSGovernment
 
 @end
