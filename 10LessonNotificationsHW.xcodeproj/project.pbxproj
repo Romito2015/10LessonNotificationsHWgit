@@ -19,6 +19,7 @@
 		5AE6D8281B4C088C008E572F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE6D8101B4C088C008E572F /* UIKit.framework */; };
 		5AE6D8301B4C088D008E572F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5AE6D82E1B4C088D008E572F /* InfoPlist.strings */; };
 		5AE6D8321B4C088D008E572F /* _0LessonNotificationsHWTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE6D8311B4C088D008E572F /* _0LessonNotificationsHWTests.m */; };
+		5AE6D83D1B4C08FD008E572F /* RSGovernment.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE6D83C1B4C08FD008E572F /* RSGovernment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		5AE6D82D1B4C088C008E572F /* 10LessonNotificationsHWTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "10LessonNotificationsHWTests-Info.plist"; sourceTree = "<group>"; };
 		5AE6D82F1B4C088D008E572F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5AE6D8311B4C088D008E572F /* _0LessonNotificationsHWTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _0LessonNotificationsHWTests.m; sourceTree = "<group>"; };
+		5AE6D83B1B4C08FD008E572F /* RSGovernment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSGovernment.h; path = ../RSGovernment.h; sourceTree = "<group>"; };
+		5AE6D83C1B4C08FD008E572F /* RSGovernment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSGovernment.m; path = ../RSGovernment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 		5AE6D8121B4C088C008E572F /* 10LessonNotificationsHW */ = {
 			isa = PBXGroup;
 			children = (
+				5AE6D83B1B4C08FD008E572F /* RSGovernment.h */,
+				5AE6D83C1B4C08FD008E572F /* RSGovernment.m */,
 				5AE6D81B1B4C088C008E572F /* RSAppDelegate.h */,
 				5AE6D81C1B4C088C008E572F /* RSAppDelegate.m */,
 				5AE6D81E1B4C088C008E572F /* Images.xcassets */,
@@ -241,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AE6D8191B4C088C008E572F /* main.m in Sources */,
+				5AE6D83D1B4C08FD008E572F /* RSGovernment.m in Sources */,
 				5AE6D81D1B4C088C008E572F /* RSAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
