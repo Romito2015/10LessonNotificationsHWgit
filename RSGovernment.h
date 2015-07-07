@@ -11,5 +11,6 @@
 @interface RSGovernment : NSObject
 
 @property (assign, nonatomic) CGFloat taxLevel;
+@property (assign, nonatomic) CGFloat salary;
 
 @end
