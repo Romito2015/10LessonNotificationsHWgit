@@ -12,5 +12,6 @@
 
 @property (assign, nonatomic) CGFloat taxLevel;
 @property (assign, nonatomic) CGFloat salary;
+@property (assign, nonatomic) CGFloat pension;
 
 @end
