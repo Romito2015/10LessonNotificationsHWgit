@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A80C5581B56F06800D4CBEF /* RSDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80C5571B56F06800D4CBEF /* RSDoctor.m */; };
 		5AE6D80D1B4C088C008E572F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE6D80C1B4C088C008E572F /* Foundation.framework */; };
 		5AE6D80F1B4C088C008E572F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE6D80E1B4C088C008E572F /* CoreGraphics.framework */; };
 		5AE6D8111B4C088C008E572F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE6D8101B4C088C008E572F /* UIKit.framework */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A80C5561B56F06800D4CBEF /* RSDoctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDoctor.h; sourceTree = "<group>"; };
+		5A80C5571B56F06800D4CBEF /* RSDoctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDoctor.m; sourceTree = "<group>"; };
 		5AE6D8091B4C088C008E572F /* 10LessonNotificationsHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 10LessonNotificationsHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AE6D80C1B4C088C008E572F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5AE6D80E1B4C088C008E572F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -110,6 +113,8 @@
 		5AE6D8121B4C088C008E572F /* 10LessonNotificationsHW */ = {
 			isa = PBXGroup;
 			children = (
+				5A80C5561B56F06800D4CBEF /* RSDoctor.h */,
+				5A80C5571B56F06800D4CBEF /* RSDoctor.m */,
 				5AE6D83B1B4C08FD008E572F /* RSGovernment.h */,
 				5AE6D83C1B4C08FD008E572F /* RSGovernment.m */,
 				5AE6D81B1B4C088C008E572F /* RSAppDelegate.h */,
@@ -246,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AE6D8191B4C088C008E572F /* main.m in Sources */,
+				5A80C5581B56F06800D4CBEF /* RSDoctor.m in Sources */,
 				5AE6D83D1B4C08FD008E572F /* RSGovernment.m in Sources */,
 				5AE6D81D1B4C088C008E572F /* RSAppDelegate.m in Sources */,
 			);
@@ -444,6 +450,7 @@
 				5AE6D8371B4C088D008E572F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AE6D8381B4C088D008E572F /* Build configuration list for PBXNativeTarget "10LessonNotificationsHWTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +459,7 @@
 				5AE6D83A1B4C088D008E572F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,15 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSString *const RSGovernmentTaxLevelDidChangedNotification;
-extern NSString *const RSGovernmentSalaryDidChangedNotification;
-extern NSString *const RSGovernmentPensionDidChangedNotification;
-extern NSString *const RSGovernmentAveragePriceDidChangedNotification;
+extern NSString *const RSGovernmentTaxLevelDidChangeNotification;
+extern NSString *const RSGovernmentSalaryDidChangeNotification;
+extern NSString *const RSGovernmentPensionDidChangeNotification;
+extern NSString *const RSGovernmentAveragePriceDidChangeNotification;
 
-extern NSString *const RSGovernmentTaxLevelUserInfo;
-extern NSString *const RSGovernmentSalaryUserInfo;
-extern NSString *const RSGovernmentPensionUserInfo;
-extern NSString *const RSGovernmentAveragePriceUserInfo;
+extern NSString *const RSGovernmentTaxLevelUserInfoKey;
+extern NSString *const RSGovernmentSalaryUserInfoKey;
+extern NSString *const RSGovernmentPensionUserInfoKey;
+extern NSString *const RSGovernmentAveragePriceUserInfoKey;
 
 
 @interface RSGovernment : NSObject

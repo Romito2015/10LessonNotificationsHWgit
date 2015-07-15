@@ -7,6 +7,15 @@
 //
 
 #import "RSAppDelegate.h"
+#import "RSGovernment.h"
+#import "RSDoctor.h"
+
+@interface RSAppDelegate()
+
+@property (strong, nonatomic) RSGovernment *government;
+
+@end
+
 
 @implementation RSAppDelegate
 
@@ -16,7 +25,52 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(governmentNotification:)
+                                                 name:RSGovernmentTaxLevelDidChangeNotification
+                                               object:nil];
+    
+    self.government = [[RSGovernment alloc] init];
+    
+    RSDoctor *doctor1 = [[RSDoctor alloc] init];
+    RSDoctor *doctor2 = [[RSDoctor alloc] init];
+    RSDoctor *doctor3 = [[RSDoctor alloc] init];
+    RSDoctor *doctor4 = [[RSDoctor alloc] init];
+    RSDoctor *doctor5 = [[RSDoctor alloc] init];
+    
+    doctor1.salary = doctor2.salary = doctor3.salary = doctor4.salary = doctor5.salary = self.government.salary;
+    
+    self.government.taxLevel = 5.5;
+    self.government.salary = 1100;
+    self.government.averagePrice = 15;
+    self.government.pension = 550;
+    
+    
+    
+    self.government.salary = 1200;
+    
+    self.government.salary = 900;
+    
+    self.government.salary = 1550;
+
+    
+    
+    
+    
     return YES;
+}
+
+// перед тем как реализовывать метод governmentNotification и установкой его в качестве селектора нужно удалить себя (self)  как Observer'a!!!!!!!!!!
+- (void) dealloc {
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void) governmentNotification:(NSNotification *) notification {
+    
+    // NSLog(@"governmentNotification userInfo %@",notification.userInfo);
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
